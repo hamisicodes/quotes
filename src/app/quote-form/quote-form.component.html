@@ -18,11 +18,13 @@
             </div>
             <div class="form-group">
               <label for="postedby">Posted By</label>
-              <input type="text" class="form-control" id="postedby" maxlength="20" size="20" placeholder="John Doe">
+              <input type="text" class="form-control" id="postedby" maxlength="20" size="20" [(ngModel)]="newQuote.publisher" name="name" placeholder="John Doe">
+              {{newQuote.publisher}}
             </div>
             <div class="form-group">
               <label for="quote">Quote</label>
-              <textarea class="form-control" id="quote" rows="3" cols="5"></textarea>
+              <textarea class="form-control" id="quote" rows="3" cols="5" [(ngModel)]="newQuote.description" name="name"></textarea>
+              {{newQuote.description}}
             </div>
             <button type="button" class="btn btn-primary">Post</button>
           </form>
