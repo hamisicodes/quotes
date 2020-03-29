@@ -18,7 +18,7 @@
                 <br><br>
             </div>
             <div class="col-sm">
-                <div class="card bg-light mb-3" style="max-width: 35rem;" *ngFor = "let quote_instance of myQuote">
+                <div class="card bg-light mb-3" style="max-width: 35rem;" *ngFor = "let quote_instance of myQuote ;let i = index">
                     <div class="card-header">{{"@"+ quote_instance.username}}
 
                         <button type="button" class="btn btn-outline-danger pull-right">Delete
@@ -29,10 +29,10 @@
                     <div class="card-body">
                         
                         <p class="card-text">{{quote_instance.description}}</p>
-                        <i class="fa fa-thumbs-up" style="font-size:24px; color:blue"></i><span class="tab"></span>
-
-                        <i class="fa fa-thumbs-down" style="font-size:24px; color:rgb(182, 20, 60)"></i><span
-                            class="tab"></span>
+                        <button type="button" class="btn btn-light" (click)="increaseUpvote(i)"> <i class="fa fa-thumbs-up" style="font-size:24px; color:blue"></i>{{upVote}}</button><span class="tab"></span>
+                       
+                        <button type="button" class="btn btn-light"><i class="fa fa-thumbs-down" style="font-size:24px; color:rgb(182, 20, 60)"></i>{{downVote}}</button>
+                        <span class="tab"></span>
 
 
                     </div>
