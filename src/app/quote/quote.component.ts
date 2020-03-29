@@ -23,6 +23,11 @@ export class QuoteComponent implements OnInit {
    upVote = 0;
    downVote = 0;
 
+  increaseUpvote(i){
+    this.upVote[i] +=1;
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
