@@ -24,7 +24,9 @@ export class QuoteComponent implements OnInit {
 
   increaseUpvote(i){
     this.myQuote[i].upVote += 1;
-    
+  }
+  increaseDownVote(i){
+    this.myQuote[i].downVote += 1;
 
   }
 
