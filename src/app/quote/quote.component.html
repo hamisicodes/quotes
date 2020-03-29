@@ -19,10 +19,10 @@
             </div>
             <div class="col-sm">
                 <div class="card bg-light mb-3" style="max-width: 35rem;" *ngFor = "let quote_instance of myQuote">
-                    <div class="card-header">{{quote_instance.username}}
+                    <div class="card-header">{{"@"+ quote_instance.username}}
 
-                        <span class="big-tab"> <button type="button" class="btn btn-outline-danger">Delete
-                                Quote</button></span>
+                        <button type="button" class="btn btn-outline-danger pull-right">Delete
+                                Quote</button>
                     </div>
 
 
