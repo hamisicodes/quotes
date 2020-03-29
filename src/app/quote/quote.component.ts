@@ -8,16 +8,20 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuote:Quote[] =[
-    new Quote('Drizzy Drake','Drake', 'Working on the weekend ike usual'),
+    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual'),
 
   ] 
 
+  //Add new Quote object to the Quote[] array
   addNewQuote(quote){
     this.myQuote.push(quote);
     console.log(this.myQuote);
     
     
   }
+  //Initialize the upvote and downvote properties with 0
+   upVote = 0;
+   downVote = 0;
 
   constructor() { }
 
