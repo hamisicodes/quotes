@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuote:Quote[] =[
-    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual'),
+    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual',0,0),
 
   ] 
 
@@ -20,11 +20,11 @@ export class QuoteComponent implements OnInit {
     
   }
   //Initialize the upvote and downvote properties with 0
-   upVote = 0;
-   downVote = 0;
+  
 
   increaseUpvote(i){
-    this.upVote[i] +=1;
+    this.myQuote[i].upVote += 1;
+    
 
   }
 
