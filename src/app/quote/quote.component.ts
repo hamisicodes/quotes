@@ -7,9 +7,12 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  myQuote:Quote = new Quote('Martin Lurther','Abbas Ngao', 'I love Food.A lot of Food');
+  myQuote:Quote[] =[
+    new Quote('Martin Lurther','Abbas Ngao', 'I love Food.A lot of Food'),
+
+  ] 
   addNewQuote(quote){
-    this.myQuote = quote;
+    this.myQuote.push(quote);
     
   }
 
