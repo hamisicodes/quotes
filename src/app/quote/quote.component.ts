@@ -13,6 +13,8 @@ export class QuoteComponent implements OnInit {
   ] 
   addNewQuote(quote){
     this.myQuote.push(quote);
+    console.log(this.myQuote);
+    
     
   }
 
