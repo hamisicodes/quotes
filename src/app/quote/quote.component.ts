@@ -8,6 +8,10 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuote:Quote = new Quote('Martin Lurther','Abbas Ngao', 'I love Food.A lot of Food');
+  addNewQuote(quote){
+    this.myQuote = quote;
+    
+  }
 
   constructor() { }
 
