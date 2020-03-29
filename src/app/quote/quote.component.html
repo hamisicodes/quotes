@@ -21,7 +21,7 @@
                 <div class="card bg-light mb-3" style="max-width: 35rem;" *ngFor = "let quote_instance of myQuote ;let i = index">
                     <div class="card-header">{{"@"+ quote_instance.username}}
 
-                        <button type="button" class="btn btn-outline-danger pull-right" (click)="deleteQuote()">Delete
+                        <button type="button" class="btn btn-outline-danger pull-right" (click)="deleteQuote(i)">Delete
                                 Quote</button>
                     </div>
 

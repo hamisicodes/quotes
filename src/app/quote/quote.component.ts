@@ -29,6 +29,9 @@ export class QuoteComponent implements OnInit {
     this.myQuote[i].downVote += 1;
 
   }
+  deleteQuote(i){
+    this.myQuote.splice(i,1);
+  }
 
   constructor() { }
 
