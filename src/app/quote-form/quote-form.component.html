@@ -10,7 +10,7 @@
     <div class="container-fluid">
       
 
-        <form>
+        <form (ngSubmit)='submitQuote()'>
             <div class="form-group">
               <label for="author">Author</label>
               <input type="text" class="form-control" id="author" maxlength="20" size="20" [(ngModel)]="newQuote.author" name="name"  placeholder="John Doe">
