@@ -8,9 +8,10 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuote:Quote[] =[
-    new Quote('Martin Lurther','Abbas Ngao', 'I love Food.A lot of Food'),
+    new Quote('Drizzy Drake','Drake', 'Working on the weekend ike usual'),
 
   ] 
+
   addNewQuote(quote){
     this.myQuote.push(quote);
     console.log(this.myQuote);
