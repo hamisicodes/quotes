@@ -31,7 +31,7 @@
                         <p class="card-text">{{quote_instance.description}}</p>
                         <button type="button" class="btn btn-light" (click)="increaseUpvote(i)"> <i class="fa fa-thumbs-up" style="font-size:24px; color:blue"></i>{{quote_instance.upVote}}</button><span class="tab"></span>
                        
-                        <button type="button" class="btn btn-light"><i class="fa fa-thumbs-down" style="font-size:24px; color:rgb(182, 20, 60)"></i>{{quote_instance.downVote}}</button>
+                        <button type="button" class="btn btn-light" (click)="increaseDownVote()"><i class="fa fa-thumbs-down" style="font-size:24px; color:rgb(182, 20, 60)"></i>{{quote_instance.downVote}}</button>
                         <span class="tab"></span>
 
 
