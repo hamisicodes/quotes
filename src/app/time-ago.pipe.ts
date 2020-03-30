@@ -7,7 +7,7 @@ export class TimeAgoPipe implements PipeTransform {
 
   transform(value:any): number{    
     console.log(value)
-    return null;
+    return 1 ;
   }
 
 }
