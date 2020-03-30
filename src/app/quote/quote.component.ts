@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuote:Quote[] =[
-    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual',0,0),
+    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual',0,0,new Date(2020,5,2)),
 
   ] 
 
