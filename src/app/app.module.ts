@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,9 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     QuoteFormComponent,
     QuoteComponent,
-    ComponentDetailComponent
+    ComponentDetailComponent,
+    TimeAgoPipe
+
   ],
   imports: [
     BrowserModule,
