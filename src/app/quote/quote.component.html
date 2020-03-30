@@ -34,11 +34,7 @@
                        
                         <button type="button" class="btn btn-light" (click)="increaseDownVote(i)"><i class="fa fa-thumbs-down" style="font-size:24px; color:rgb(182, 20, 60)"></i>{{quote_instance.downVote}}</button>
                         <span class="tab"></span>
-                        <div>
-                            {{quote_instance.postedDate|date}}
-                            <p>{{quote_instance.postedDate|timeAgo }} min ago</p>
-                        </div>
-                        
+                        <app-quote-detail [quote] = 'quote_instance'></app-quote-detail>
 
 
                     </div>
