@@ -8,9 +8,10 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuote:Quote[] =[
-    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual',0,0,new Date(2020,5,2)),
+    new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual',0,0,new Date()),
 
   ] 
+
 
   //Add new Quote object to the Quote[] array
   addNewQuote(quote){
@@ -31,6 +32,19 @@ export class QuoteComponent implements OnInit {
   }
   deleteQuote(i){
     this.myQuote.splice(i,1);
+  }
+
+  //To highlight Quote with highest upvote
+  toBeHighlighted:number
+  index:number
+  highlightQuote():number{
+    this.toBeHighlighted = 0
+    for(this.index = 0 ; this.index <this.myQuote.length ; this.index++){
+      if(this.myQuote[this.index].upVote  > this.toBeHighlighted){
+        this.toBeHighlighted = this.myQuote[this.index].upVote
+      }
+    }
+    return this.toBeHighlighted
   }
 
   constructor() { }
