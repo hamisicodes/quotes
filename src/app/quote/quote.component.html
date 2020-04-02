@@ -18,8 +18,12 @@
                 <br><br>
             </div>
             <div class="col-sm">
-                <div class="card bg-light mb-3" style="max-width: 35rem;" *ngFor = "let quote_instance of myQuote ;let i = index">
-                    <p class="big-tab" appHighlight  *ngIf="highlightQuote() === quote_instance.upVote &&  quote_instance.upVote > 0">Quote with the Highest upvotes</p>
+                <div class="alert alert-info" role="alert" *ngIf = "showDisclaimer()">
+                    No Quotes to Display for now
+                  </div>
+                <div class="card bg-light mb-3" style="max-width: 35rem;"  *ngFor = "let quote_instance of myQuote ;let i = index">
+                    
+                    <p  appHighlight  *ngIf="highlightQuote() === quote_instance.upVote &&  quote_instance.upVote > 0">Quote with the Highest upvotes</p>
                     <div class="card-header" >{{"@"+ quote_instance.username}}
                        
 

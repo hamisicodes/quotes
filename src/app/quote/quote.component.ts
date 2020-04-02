@@ -10,7 +10,19 @@ export class QuoteComponent implements OnInit {
   myQuote:Quote[] =[
     new Quote('Drizzy Drake','Drake', 'Working on the weekend like usual',0,0,new Date()),
 
-  ] 
+  ]
+
+  disclaimerOn = false
+  showDisclaimer(){
+    if (this.myQuote.length === 0){
+      this.disclaimerOn = true
+    }else{
+      this.disclaimerOn = false
+    }
+    return this.disclaimerOn
+  }
+
+  disclaimer:string = "No Quotes to display for now.You can post yours"
 
 
   //Add new Quote object to the Quote[] array
@@ -46,6 +58,7 @@ export class QuoteComponent implements OnInit {
     }
     return this.toBeHighlighted
   }
+
 
   constructor() { }
 
