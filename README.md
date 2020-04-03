@@ -2,6 +2,17 @@
 
 An  application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
 
+## Author
+Hamisi Ngao
+<img src = "https://github.com/hamisicodes/quotes/blob/master/src/assets/screenshot.png">
+
+# Developer's contact
+ngaohamisi@gmail.com
+
+# Technologies used
+ANGULAR , HTML , CSS ,TYPESCRIPT
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
