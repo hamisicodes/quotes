@@ -6,7 +6,11 @@ An  application where users can create quotes and have those quotes voted on whe
 Hamisi Ngao
 <img src = "https://github.com/hamisicodes/quotes/blob/master/src/assets/screenshot.png">
 
+# Developer's contact
+ngaohamisi@gmail.com
 
+# Technologies used
+ANGULAR , HTML , CSS ,TYPESCRIPT
 
 
 ## Development server
