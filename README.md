@@ -4,6 +4,7 @@ An  application where users can create quotes and have those quotes voted on whe
 
 ## Author
 Hamisi Ngao
+https://github.com/hamisicodes/quotes/blob/master/src/assets/screenshot.png
 
 
 
